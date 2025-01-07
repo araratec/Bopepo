@@ -146,8 +146,8 @@ public class Boleto {
 	 */
 	public Boleto(Titulo titulo)throws IllegalArgumentException, NotSupportedBancoException, NotSupportedCampoLivreException{
 
-		if(log.isTraceEnabled())
-			log.trace("Instanciando boleto");
+//		if(log.isTraceEnabled())
+//			log.trace("Instanciando boleto");
 		
 		if(log.isDebugEnabled())
 			log.debug("titulo instance : "+titulo);
@@ -171,9 +171,9 @@ public class Boleto {
 			Exceptions.throwIllegalArgumentException("Título nulo!");
 		}
 		
-		if(log.isDebugEnabled() || log.isTraceEnabled()){
-			log.trace("Boleto Instanciado : "+this);
-		}
+//		if(log.isDebugEnabled() || log.isTraceEnabled()){
+//			log.trace("Boleto Instanciado : "+this);
+//		}
 
 	}
 
@@ -184,8 +184,8 @@ public class Boleto {
 	public Boleto(Titulo titulo, CampoLivre campoLivre) {
 		super();
 
-		if(log.isTraceEnabled())
-			log.trace("Instanciando boleto");
+//		if(log.isTraceEnabled())
+//			log.trace("Instanciando boleto");
 		
 		if(log.isDebugEnabled())
 			log.debug("titulo instance : "+titulo);
@@ -208,10 +208,10 @@ public class Boleto {
 			throw e;
 		}
 		
-		if(log.isDebugEnabled() || log.isTraceEnabled()){
-			
-			log.trace("Boleto Instanciado : "+this);
-		}
+//		if(log.isDebugEnabled() || log.isTraceEnabled()){
+//			
+//			log.trace("Boleto Instanciado : "+this);
+//		}
 		
 	}
 

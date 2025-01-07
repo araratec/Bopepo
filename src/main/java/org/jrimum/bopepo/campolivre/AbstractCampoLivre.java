@@ -173,14 +173,14 @@ abstract class AbstractCampoLivre extends BlockOfFields implements CampoLivre {
 	protected static CampoLivre create(Titulo titulo) throws NotSupportedBancoException,
 			NotSupportedCampoLivreException, CampoLivreException {
 
-		if (log.isTraceEnabled()){
-			
-			log.trace("Instanciando Campo livre");
-		}
-		if (log.isDebugEnabled()){
-			
-			log.debug("titulo instance : " + titulo);
-		}
+//		if (log.isTraceEnabled()){
+//			
+//			log.trace("Instanciando Campo livre");
+//		}
+//		if (log.isDebugEnabled()){
+//			
+//			log.debug("titulo instance : " + titulo);
+//		}
 
 		try{
 		

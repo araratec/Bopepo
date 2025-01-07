@@ -227,8 +227,8 @@ public class LinhaDigitavel extends BlockOfFields {
 		setLength(STRING_LENGTH);
 		setSize(FIELDS_LENGTH);
 		
-		if(log.isTraceEnabled())
-			log.trace("Instanciando Linha Digitável");
+//		if(log.isTraceEnabled())
+//			log.trace("Instanciando Linha Digitável");
 		
 		if(log.isDebugEnabled())
 			log.debug("codigoDeBarra instance : "+codigoDeBarras);
@@ -256,8 +256,8 @@ public class LinhaDigitavel extends BlockOfFields {
 		
 		this.innerCampo5.getValue().load(codigoDeBarras);
 		
-		if(log.isDebugEnabled() || log.isTraceEnabled())
-			log.debug("linhaDigitavel instanciada : "+this.write());
+//		if(log.isDebugEnabled() || log.isTraceEnabled())
+//			log.debug("linhaDigitavel instanciada : "+this.write());
 	}
 
 	/**
@@ -374,9 +374,9 @@ public class LinhaDigitavel extends BlockOfFields {
 		 * @param codigoDeBarras
 		 */
 		private void load(CodigoDeBarras codigoDeBarras){
-				
-				if(log.isTraceEnabled())
-					log.trace("Compondo campo 1 da Linha Digitável");
+//				
+//				if(log.isTraceEnabled())
+//					log.trace("Compondo campo 1 da Linha Digitável");
 
 				add(new FixedField<String>(codigoDeBarras.write().substring(0, 3),3));
 				add(new FixedField<String>(codigoDeBarras.write().substring(3, 4),1));
@@ -387,8 +387,8 @@ public class LinhaDigitavel extends BlockOfFields {
 					log.debug("Digito verificador do Field 1 da Linha Digitável : "+get(3).getValue());
 
 				
-				if(log.isDebugEnabled() || log.isTraceEnabled())
-					log.debug("Field 1 da Linha Digitável composto : "+write());
+//				if(log.isDebugEnabled() || log.isTraceEnabled())
+//					log.debug("Field 1 da Linha Digitável composto : "+write());
 		}
 		
 	}
@@ -425,8 +425,8 @@ public class LinhaDigitavel extends BlockOfFields {
 		 */
 		private void load(CodigoDeBarras codigoDeBarras){
 			
-			if(log.isTraceEnabled())
-				log.trace("Compondo campo 2 da Linha Digitável");
+//			if(log.isTraceEnabled())
+//				log.trace("Compondo campo 2 da Linha Digitável");
 			
 			add(new FixedField<String>(codigoDeBarras.write().substring(24, 34),10));				
 			add(new FixedField<Integer>(calculadorDV.calcule(get(0).write()),1));
@@ -434,8 +434,8 @@ public class LinhaDigitavel extends BlockOfFields {
 			if(log.isDebugEnabled())
 				log.debug("Digito verificador do campo 2 da Linha Digitável : "+get(1).getValue());
 			
-			if(log.isDebugEnabled() || log.isTraceEnabled())
-				log.debug("InnerCampo 2 da Linha Digitável composto : "+write());
+//			if(log.isDebugEnabled() || log.isTraceEnabled())
+//				log.debug("InnerCampo 2 da Linha Digitável composto : "+write());
 		}
 		
 	}
@@ -471,8 +471,8 @@ public class LinhaDigitavel extends BlockOfFields {
 		 */
 		private void load(CodigoDeBarras codigoDeBarras){
 			
-			if(log.isTraceEnabled())
-				log.trace("Compondo campo 3 da Linha Digitável");
+//			if(log.isTraceEnabled())
+//				log.trace("Compondo campo 3 da Linha Digitável");
 			
 			add(new FixedField<String>(codigoDeBarras.write().substring(34, 44),10));				
 			add(new FixedField<Integer>(calculadorDV.calcule(get(0).write()),1));
@@ -480,8 +480,8 @@ public class LinhaDigitavel extends BlockOfFields {
 			if(log.isDebugEnabled())
 				log.debug("Digito verificador do campo 3 da Linha Digitável : "+get(1).getValue());
 			
-			if(log.isDebugEnabled() || log.isTraceEnabled())
-				log.debug("InnerCampo 3 da Linha Digitável composto : "+write());
+//			if(log.isDebugEnabled() || log.isTraceEnabled())
+//				log.debug("InnerCampo 3 da Linha Digitável composto : "+write());
 			
 		}
 		
@@ -518,14 +518,14 @@ public class LinhaDigitavel extends BlockOfFields {
 		 */
 		private void load(CodigoDeBarras codigoDeBarras){
 			
-			if(log.isTraceEnabled())
-				log.trace("Compondo campo 5 da Linha Digitável");
+//			if(log.isTraceEnabled())
+//				log.trace("Compondo campo 5 da Linha Digitável");
 			
 			add(new FixedField<String>(codigoDeBarras.write().substring(5, 9),4));
 			add(new FixedField<String>(codigoDeBarras.write().substring(9, 19),10));
 			
-			if(log.isDebugEnabled() || log.isTraceEnabled())
-				log.debug("InnerCampo 5 da Linha Digitável composto : "+write());
+//			if(log.isDebugEnabled() || log.isTraceEnabled())
+//				log.debug("InnerCampo 5 da Linha Digitável composto : "+write());
 			
 		}
 		

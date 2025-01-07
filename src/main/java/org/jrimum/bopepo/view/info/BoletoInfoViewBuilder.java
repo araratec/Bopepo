@@ -66,7 +66,7 @@ public class BoletoInfoViewBuilder {
 	private final Map<String,String> boletoTextosExtra;
 	private final Map<String,Image> boletoImagensExtra;
 
-	private final BoletoInfoCampoView boletoInfoCampo;
+	private final BoletoInfoCampoView boletoInfoCampo; 
 	
 	
 	/**
