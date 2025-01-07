@@ -1,8 +1,17 @@
 Bopepo
-======
-
-[![Build Status](https://ci-jrimum.rhcloud.com/buildStatus/icon?job=Bopepo)](https://ci-jrimum.rhcloud.com)
 
 Biblioteca Java para geração de boletos bancários.
 
- * http://jrimum.org/bopepo 
+
+        <!--jrimum-texgit-->
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>jrimum-texgit</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <!--jrimum-domkee-->
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>jrimum-domkee</artifactId>
+            <version>${project.version}</version>
+        </dependency>
